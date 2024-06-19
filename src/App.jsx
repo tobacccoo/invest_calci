@@ -6,8 +6,8 @@ import Results from "./components/Results";
 function App() {
 
   const[input, setUseinput]= useState({
-    initialInvestment: 100000,
-    annualInvestment: 1000000,
+    initialInvestment: 10000,
+    annualInvestment: 100000,
     expectedReturn: 6,
     duration: 10,
   });
@@ -15,8 +15,8 @@ function App() {
     function handleChange({inputidentifier, newvalue}){
       setUseinput((prevUserinput)=>{
         return {
-        ...prevUserinput , [inputidentifier] : +newvalue
-      }      
+        ...prevUserinput , [inputidentifier] : +newvalue,
+      };      
     });
     }
 
